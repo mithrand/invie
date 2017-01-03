@@ -12,8 +12,22 @@ body {
 
 a {
 	font-style: none;
+} 
+
+h3 {
+	/*display: inline-block;*/
 }
 
+button{
+	padding: 10px;
+	width: 250px;
+	border-radius: 15px;
+	font-family: 'Allerta', sans-serif;
+	font-size: 1em; 
+	background-color: #fe3c4e;
+	color:white;
+	border:0px solid black;
+}
 .container{
 	width: 800px;
 	margin: auto;
@@ -21,25 +35,35 @@ a {
 
 .floatleft{
 	float:left;
+	position: relative;
+	bottom: -100px;
 }
 
 .floatright{
 	float: right;
+	position: relative;
+	top: -102px;
 }
 
 
-.header {
-
+.header *{
+	margin:0px auto;
 }
 
 .header .menu{
 	font-size:24px;
 	display: inline-block;
+	position: absolute;
+	right: 0px;
 }
 
 .header .menu li{
 	display: inline-block;
 	margin-left: 15px;
+}
+
+.header .menu ul{
+	margin: 15px;
 }
 
 .header .logotipo {
@@ -73,12 +97,17 @@ a {
 }
 
 .guitarras .guitarra {
-	overflow: hidden;
+	overflow: visible;
 	border: 1px solid #1f313c;
+	border-radius: 10px;
 	padding: 10px;
 	margin: 10px;
 }
 
 .guitarras .guitarra ol {
 	padding-left: 0px;
+}
+
+.guitarras .guitarra .container{
+	margin: 49px;
 }
