@@ -12,6 +12,8 @@ body {
 
 a {
 	font-style: none;
+	text-decoration: none;
+	text-transform: none;
 } 
 
 h3 {
@@ -28,9 +30,11 @@ button{
 	color:white;
 	border:0px solid black;
 }
+
 .container{
 	width: 800px;
 	margin: auto;
+	position: relative;
 }
 
 .floatleft{
@@ -50,6 +54,10 @@ button{
 	margin:0px auto;
 }
 
+.header{
+	position: absolute;
+}
+
 .header .menu{
 	font-size:24px;
 	display: inline-block;
@@ -60,10 +68,19 @@ button{
 .header .menu li{
 	display: inline-block;
 	margin-left: 15px;
+	text-decoration: none;
+	color:white;
+	list-style-type:circle;
 }
+
+
 
 .header .menu ul{
 	margin: 15px;
+}
+
+.header .menu a{
+	color:white;
 }
 
 .header .logotipo {
@@ -110,4 +127,29 @@ button{
 
 .guitarras .guitarra .container{
 	margin: 49px;
+}
+
+.footer{
+	background-color: #273b47;
+	height: 200px;
+	padding: 10px;
+	margin-top: 70px;
+}
+
+.footer .contacto img{
+	display: block;
+	height: 50px;
+	margin: 15px;
+}
+
+.footer .contacto a{
+	text-decoration: none;
+	color: white;
+	display: inline-block;
+	margin: 15px;
+}
+
+.footer .contacto a strong{
+	font-size: 1.2em;
+	font-weight: bold;
 }
